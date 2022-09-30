@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 30, 2022 at 06:58 AM
+-- Generation Time: Sep 30, 2022 at 02:36 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 7.4.28
 
@@ -44,29 +44,8 @@ CREATE TABLE `tbl_arsip` (
 --
 
 INSERT INTO `tbl_arsip` (`id_arsip`, `id_kategori`, `no_arsip`, `nama_arsip`, `tgl_upload`, `tgl_update`, `file_arsip`, `id_jabatan`, `id_user`) VALUES
-(21, 2, '12312312', 'mencoba arsip 27-09-22', '2022-09-29', '2022-09-29', 'LaporanAkhir__AndriyAthallaAlrasheed.pdf', 2, 1);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `tbl_jabatan`
---
-
-CREATE TABLE `tbl_jabatan` (
-  `id_jabatan` int(11) NOT NULL,
-  `nama_jabatan` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `tbl_jabatan`
---
-
-INSERT INTO `tbl_jabatan` (`id_jabatan`, `nama_jabatan`) VALUES
-(1, 'Sekretaris'),
-(2, 'Bendahara Keuangan'),
-(3, 'Kemasyarakatan'),
-(4, 'Sosial dan Budaya'),
-(6, 'Kesehatan');
+(26, 2, '12312312', 'mencoba arsip 27-09-22', '2022-09-30', '2022-09-30', 'Soal_Praktek_Pemrograman_20227_(2)31_(1)_(1).pdf', 2, 1),
+(27, 11, '1731710103', 'Surat Tanah Bandulan', '2022-09-30', '2022-09-30', 'Soal_Praktek_Pemrograman_20227_(2)31_(1)_(1)1.pdf', 2, 1);
 
 -- --------------------------------------------------------
 
@@ -90,7 +69,8 @@ INSERT INTO `tbl_kategori` (`id_kategori`, `nama_kategori`) VALUES
 (5, 'Surat Edaran'),
 (6, 'Surat Kesehatan'),
 (7, 'Absensi '),
-(8, 'Surat Kuasa');
+(8, 'Surat Kuasa'),
+(11, 'Surat Tanah');
 
 -- --------------------------------------------------------
 
@@ -126,12 +106,6 @@ ALTER TABLE `tbl_arsip`
   ADD PRIMARY KEY (`id_arsip`);
 
 --
--- Indexes for table `tbl_jabatan`
---
-ALTER TABLE `tbl_jabatan`
-  ADD PRIMARY KEY (`id_jabatan`);
-
---
 -- Indexes for table `tbl_kategori`
 --
 ALTER TABLE `tbl_kategori`
@@ -151,19 +125,13 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `tbl_arsip`
 --
 ALTER TABLE `tbl_arsip`
-  MODIFY `id_arsip` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
-
---
--- AUTO_INCREMENT for table `tbl_jabatan`
---
-ALTER TABLE `tbl_jabatan`
-  MODIFY `id_jabatan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_arsip` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT for table `tbl_kategori`
 --
 ALTER TABLE `tbl_kategori`
-  MODIFY `id_kategori` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id_kategori` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `user`
